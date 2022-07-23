@@ -1,24 +1,17 @@
-/* Q-1. Fibonacci Series
-		Fibonacci series is a special type of series in which the next term is the sum of the
-		previous two terms. For example, if 0 and 1 are the two previous terms in a series, then
-		the next term will be 1(0+1).
-		package com.bridgelabz;
-		*/
 package com.bridzelab.FibonacciSeries;
-import java.util.Scanner;   // Import Scanner
+import java.util.Scanner;   
 public class FibonacciSeries {
 public static void main(String[] args) {
 	
-		        int a=0,b=1,sum;  //Initializing
-		        Scanner sc = new Scanner(System.in);  //Make new Scanner obj
-		        System.out.println("Enter the value of terms n: ");
-		        int n = sc.nextInt();  // Input int
+	int a=0,b=1,c, i;  
+	 System.out.print(a+" "+b);
+	  
+	 for(i=2;i<20;i++)
+	 {  
+	  c=a+b;  
+	  System.out.print(" "+c);  
+	  a=b;  
+	  b=c;  
+	 }  
 
-		        for(int i=0;i<n;i++){
-		            System.out.println(a);
-		            sum=a+b;
-		            a=b;
-		            b=sum;
-		        }
-		    }
-		}
+	}}
